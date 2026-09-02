@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  background: #c9a227;
+  color: #1b2436;
+}
+
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 40;
+  opacity: 0.045;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.beam {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 900px 500px at 78% -10%, rgba(201, 162, 39, 0.28), transparent 60%),
+    radial-gradient(ellipse 600px 400px at 15% 10%, rgba(201, 162, 39, 0.1), transparent 65%);
+}
+
+.navlink {
+  position: relative;
+  padding-bottom: 4px;
+}
+.navlink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: #c9a227;
+  transition: width 0.35s ease;
+}
+.navlink:hover::after {
+  width: 100%;
+}
+
+.goldbtn {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.goldbtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -8px rgba(201, 162, 39, 0.5);
+}
+
+.outlinebtn {
+  transition: all 0.3s ease;
+}
+.outlinebtn:hover {
+  background: #1b2436;
+  color: #f6f1e7;
+}
+
+.cardhover {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.cardhover:hover {
+  transform: translateY(-6px);
+}
+
+.devhover:hover .dev-title {
+  color: #c9a227;
+}
+.dev-title {
+  transition: color 0.3s ease;
+}
+
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+.float {
+  animation: floatSlow 7s ease-in-out infinite;
+}
+
+@media (min-width: 900px) {
+  .pillar-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .pillar-2 {
+    transform: translateY(60px);
+  }
+}
+
+@media (min-width: 760px) {
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr 1fr !important;
+  }
+}
+
+@media (min-width: 860px) {
+  .desktop-nav {
+    display: flex !important;
+  }
+  .desktop-cta {
+    display: block !important;
+  }
+  .mobile-toggle {
+    display: none !important;
+  }
+}
