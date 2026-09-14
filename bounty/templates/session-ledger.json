@@ -1,0 +1,140 @@
+{
+  "_readme": "Fill this in during/after your beta session, then run: node bounty/scripts/check-ledger.mjs bounty/templates/session-ledger.json",
+  "_notes": [
+    "One object per SIGNED transaction. If an action was blocked before signing, use transactions[] with signature: null and fill blocked_before_signing + error_string. Nulls are data.",
+    "Timestamps must be ISO 8601 UTC, e.g. 2026-09-14T13:31:09Z. All figures in USD unless the field says otherwise.",
+    "Delete the _readme/_notes keys before final submission if you prefer clean JSON - the validator ignores keys starting with an underscore.",
+    "ui_claim = what the interface told you would happen. observed = what actually happened. The pair disagreeing is the finding."
+  ],
+
+  "session": {
+    "tester": "",
+    "start_utc": "",
+    "end_utc": "",
+    "market_state_at_start": "",
+    "last_us_close_utc": "",
+    "wallet": "",
+    "wallet_type": "",
+    "cluster_confirmed_in_wallet_dialog": null,
+    "cluster_label_verbatim": "",
+    "passcode_required": null,
+    "app_version": "",
+    "console_open": null,
+    "devnet_sol_at_start": null,
+    "test_usdc_at_start": null
+  },
+
+  "phase_1_access": {
+    "gate_text_verbatim": "",
+    "cluster_disclosed_before_connect": null,
+    "support_path_visible": null,
+    "console_errors_on_load": []
+  },
+
+  "phase_2_buy": {
+    "validation_tests": [
+      { "test": "buy_over_balance", "blocked": null, "error_string_verbatim": "" },
+      { "test": "buy_tiny_fraction", "blocked": null, "error_string_verbatim": "" },
+      { "test": "buy_with_zero_sol", "blocked": null, "error_string_verbatim": "" }
+    ],
+    "order": {
+      "asset": "",
+      "preview_expected_quantity": null,
+      "preview_fee_line": "",
+      "usdc_spent": null,
+      "tokens_received": null,
+      "filled_utc": "",
+      "signature": "",
+      "displayed_avg_cost": null,
+      "order_state_wording": { "submitted": "", "pending": "", "filled": "" },
+      "ownership_language_before_fill": null,
+      "portfolio_updated_only_after_fill": null
+    }
+  },
+
+  "phase_3_borrow": {
+    "lock": {
+      "locked_distinct_from_held": null,
+      "stated_cycle_enrolment": null,
+      "unlock_blocked_while_indebted": null,
+      "release_timing_wording": ""
+    },
+    "disclosure": {
+      "health_factor_shown": null,
+      "liquidation_threshold_shown": null,
+      "liquidation_price_shown": null,
+      "liquidation_fee_shown": null,
+      "expected_cost_besides_zero_interest": null,
+      "mint_fee_or_assignment_mentioned_near_button": null,
+      "notes": ""
+    },
+    "capacity_test": {
+      "advertised_capacity": null,
+      "amount_attempted": null,
+      "preview_ltv": null,
+      "preview_health_factor": null,
+      "reached_signing": null,
+      "blocked_before_signing": null,
+      "error_string_verbatim": "",
+      "console_error": "",
+      "smaller_amount_attempted": null,
+      "smaller_amount_outcome": "",
+      "signature": null
+    },
+    "position_if_opened": {
+      "debt": null,
+      "collateral_value": null,
+      "liquidation_threshold_pct": null,
+      "health_factor_displayed": null,
+      "stablecoins_received": null,
+      "signature": "",
+      "signature_utc": ""
+    },
+    "leverage_tooltip_text": "",
+    "leverage_tooltip_mentions_losses": null
+  },
+
+  "phase_4_repay": {
+    "partial_repay": { "amount": null, "signature": "", "wording": "" },
+    "unlock_with_debt_outstanding": { "blocked": null, "error_string_verbatim": "" },
+    "over_repay": { "blocked": null, "behaviour": "" },
+    "final_repay": { "signature": "", "residual_dust": null },
+    "unlock_after_repaid": { "immediate": null, "cycle_close_stated": null, "wording": "" }
+  },
+
+  "phase_5_offhours": {
+    "probe_utc": "",
+    "collateral_value_displayed": null,
+    "actual_last_close": null,
+    "gap_pct": null,
+    "price_staleness_minutes": null,
+    "could_increase_debt": null,
+    "market_closed_notice_shown": null,
+    "notes": ""
+  },
+
+  "phase_6_earn": {
+    "state": "",
+    "wording_verbatim": "",
+    "senior_apy_shown": null,
+    "junior_apy_shown": null,
+    "junior_45day_notice_disclosed": null,
+    "instant_exit_haircut_disclosed": null
+  },
+
+  "phase_7_mobile": {
+    "viewport": "390x844",
+    "health_factor_readable": null,
+    "liquidation_price_readable": null,
+    "horizontal_overflow": null,
+    "clipped_digits": null,
+    "truncated_buy_quantity": null,
+    "notes": ""
+  },
+
+  "transactions": [],
+
+  "new_findings": [],
+
+  "screenshots": []
+}
