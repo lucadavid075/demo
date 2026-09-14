@@ -1,0 +1,12 @@
+asset,sector,risk_on_cluster
+AAPL,Large-cap tech,no
+NVDA,Tech / AI,yes
+GOOG,Tech,no
+SMCI,AI infrastructure,yes
+IBIT,Bitcoin ETF,yes
+MSTR,Bitcoin proxy equity,yes
+BSOL,Solana ETF,yes
+PFE,Healthcare,no
+GS,Financials,no
+XOM,Energy,no
+GLD,Gold,no

@@ -1,0 +1,7 @@
+path,equity_usd,cost_vs_no_borrow_usd,cost_as_pct_of_loan
+plain margin @ 6.5%,5610,390,6.50%
+plain margin @ 8.0%,5520,480,8.00%
+plain margin @ 13.0% (Spout's own comparator),5220,780,13.00%
+"Spout, benign year (docs fees)",5892,108,1.80%
+"Spout, benign year (Terms fees)",5880,120,2.00%
+"Spout, one liquidation + full recovery (docs fees)",5314.27,685.73,11.43%

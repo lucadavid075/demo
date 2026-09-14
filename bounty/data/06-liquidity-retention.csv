@@ -1,0 +1,6 @@
+layer,pct_of_pool,usd_on_10m_pool,note
+insurance_fund_target,2.00,"$200,000",seeded at launch with $50k-$100k per /docs/loss-waterfall/
+junior_tranche,15.00,"$1,500,000",first-loss after the fund
+senior_instant_exit_reserve,15.00,"$1,500,000",T-bills + stablecoins; haircut 0-3%
+total_before_senior_principal,17.00,"$1,700,000",insurance target + junior
+launch_day_seed,0.50-1.00,$50k-$100k,vs a 2% target = the buffer starts under-funded by design
