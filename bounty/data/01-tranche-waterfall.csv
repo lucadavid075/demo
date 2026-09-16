@@ -1,0 +1,12 @@
+line_item,amount_usd_per_week,note
+gross_options_premium,30000,published example
+protocol_fee_20pct,6000,funds ops + insurance fund
+net_premium,24000,distributed
+senior_priority_7pct_annualised,11442.307692307691,paid first
+excess_after_priority,12557.692307692309,
+senior_share_of_excess_25pct,3139.423076923077,
+junior_share_of_excess_75pct,9418.26923076923,
+senior_total_week,14581.73076923077,APY 8.92%
+junior_total_week,9418.26923076923,APY 32.65%
+blended_pool_apy_pct,12.48,
+junior_apy_if_prose_were_true_pct,43.53,contradicts worked example on same page

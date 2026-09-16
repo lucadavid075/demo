@@ -1,0 +1,9 @@
+metric,value_pct,source
+max_ltv_borrow,50.00,docs supported-collateral (flat 50% across all 11 assets)
+docs_buffer_range,4.00-12.50,"/docs/liquidation/, /docs/fee-structure/"
+terms_buffer_range,7.50-20.00,"Terms §8.1(d), §9.3"
+drawdown_to_liq_buffer_4.00pct,7.41,docs fee + liquidation pages
+drawdown_to_liq_buffer_8.80pct,14.97,docs liquidation-example
+drawdown_to_liq_buffer_12.50pct,20.00,docs fee + liquidation pages
+drawdown_to_liq_buffer_7.50pct,13.04,"Terms §8.1(d), §9.3"
+drawdown_to_liq_buffer_20.00pct,28.57,"Terms §8.1(d), §9.3"

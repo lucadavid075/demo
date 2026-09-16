@@ -1,0 +1,4 @@
+drawdown_pct,liquidation_events,fees_paid_usd,shares_left_of_100,equity_at_recovery_usd,all_in_cost_pct_of_loan,vs_margin_6.5pct,vs_margin_13pct
+15,1,192.23,78.58,5314,11.43,-296,94
+30,2,323.15,61.36,4605,23.25,-1005,-615
+45,3,409.67,47.93,3890,35.17,-1720,-1330

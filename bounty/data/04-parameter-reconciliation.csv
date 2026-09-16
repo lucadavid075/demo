@@ -1,0 +1,12 @@
+parameter,documentation_says,binding_terms_say,where
+spAsset mint / redeem fee,0.20%,0.25%,/docs/fee-structure/ vs Terms §8.1(b)
+Withdrawal fee,0.20%,1%,/docs/fee-structure/ vs Terms §8.1(c)
+Withdrawal fee (stating page),0%,0.20%,/docs/how-lending-works/ stat block vs /docs/fee-structure/
+Liquidation fee range,4%–12.5%,7.5%–20%,/docs/liquidation/ vs Terms §8.1(d)
+Senior target APY,~9%,~8.67%,homepage/docs vs Terms §7.3
+Junior target APY,~32%,24%–27% net,homepage/docs vs Terms §7.3
+Idle-routing fee,not disclosed,~7% of idle yield,/docs/fee-structure/ vs Terms §8.1(e)
+Loss waterfall order,Insurance → Junior → Senior,Insurance → Junior → Treasury → Senior,/docs/loss-waterfall/ vs Terms §9.4
+Lender exit,"no lockups on either side","Junior: 45-day notice, loss-bearing while queued",homepage FAQ vs /docs/withdrawals/ + Terms §7.3
+SIPC protection,"SIPC-covered US broker-dealer","assume that SIPC protection does not apply",homepage FAQ vs Terms §9.8
+Eligible users,""KYC global", "access is a right"",US persons prohibited (Reg S); 11 restricted jurisdictions,"homepage/docs getting-started vs Terms §1.2, §12.2"
